@@ -1,1 +1,15 @@
-console.log("hello world");
+const express = require("express");
+const app = express();
+
+const port = 5000;
+
+app.listen(port, () => {
+    console.log(`server is Running on Port: ${port}`)
+});
+
+app.get("/", (req,res)=>{
+    res.send("Rishav")
+
+
+
+})
